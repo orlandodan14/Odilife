@@ -12,5 +12,19 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.easing
+//= require jquery-3.1.1.min
+//= require bootstrap.min
+//= require owl.carousel.min
+//= require jquery.downCount
+//= require nouislider.min
+//= require jquery.sticky
+//= require pace.min
+//= require star-rating.min
+//= require wow.min
+//= require gmaps
+//= require swiper.min
+//= require main
+//= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
