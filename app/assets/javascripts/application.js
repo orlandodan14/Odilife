@@ -25,6 +25,5 @@
 //= require gmaps
 //= require swiper.min
 //= require main
-//= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .

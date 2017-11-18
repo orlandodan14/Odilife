@@ -15,23 +15,26 @@
 	
     <!--Favicon-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <%= favicon_link_tag 'img/favicon.ico', rel: 'icon', type: 'image/x-icon' %>
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-     <!-- Google fonts -->
+         <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
 
   </head>
 
   <body>
     <%= yield %>
+
+    
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
     <!-- Initialize Swiper slide -->
         <script>
