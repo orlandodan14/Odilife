@@ -3,59 +3,47 @@
   <head>
     <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
-
     
-    <meta charset="utf-8">
-    <meta name="description" content="Plus E-Commerce Template">
-    <meta name="author" content="Diamant Gjota" />
-    <meta name="keywords" content="plus, html5, css3, template, ecommerce, e-commerce, bootstrap, responsive, creative" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Meta info from bootstrap theme -->
+    <%= render "layouts/metainfo" %>
 	
     <!--Favicon-->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <%= favicon_link_tag 'img/favicon.ico', rel: 'icon', type: 'image/x-icon' %>
+    <%= favicon_link_tag 'img/favicon.ico', rel: 'shortcut icon', type: 'image/x-icon' %>
 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
-         <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+    <!-- Google sources from bootstrap theme -->
+    <%= render "layouts/googlesources" %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+    <!-- Suport for old browsers -->
+    <%= render "layouts/shim" %>
 
   </head>
 
   <body>
+
+    <!-- Top Bar -->
+    <%= render "layouts/topbar" %>
+
+    <!-- Navbar -->
+    <% if controller_name == "static_pages" && action_name == "home" %>
+        <%= render "layouts/header1" %>
+    <% else %>
+        <%= render "layouts/header2" %>
+    <% end %>
+
+    <!-- Content -->
     <%= yield %>
 
-    
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- Footer -->
+    <%= render "layouts/footer" %>
+
+    <!-- Google Maps -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
     <!-- Initialize Swiper slide -->
-        <script>
-            var swiperH = new Swiper('.swiper-coverflow', {
-                pagination: '.swiper-pagination',
-                nextButton: '.swiper-button-next',
-                prevButton: '.swiper-button-prev',
-                paginationClickable: true,
-                effect: 'coverflow',
-                centeredSlides: true,
-                slidesPerView: 'auto',
-                loop: true,
-                coverflow: {
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows : true
-                }
-            });
-        </script>
+    <%= render "layouts/swiperslider" %>
 
   </body>
 </html>
