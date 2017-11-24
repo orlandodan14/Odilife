@@ -1,122 +1,259 @@
-<!-- start topBar -->
-<div class="navbar-default topBar">
+
+        <!-- start topBar -->
+        <div class="topBar">
+            <div class="container">
+                
+                <ul class="topBarNav pull-right">
+                    <li><a href="javascript:void(0);" data-toggle="modal" data-target=".loginModal"> Login</a></li>
+                    <li><a href="javascript:void(0);" data-toggle="modal" data-target=".registerModal"> Register</a></li>
+                    <li class="linkdown">
+                        <a href="javascript:void(0);">
+                            <i class="fa fa-user mr-5"></i>
+                            <span class="hidden-xs">
+                                My Account 
+                                <i class="fa fa-angle-down ml-5"></i>
+                            </span>
+                        </a>
+                        <ul class="w-150">
+                            <li><a href="wishlist.html">Wishlist (5)</a></li>
+                            <li><a href="cart.html">My Cart</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li class="linkdown">
+                        <a href="javascript:void(0);">
+                            <i class="fa fa-shopping-basket mr-5"></i>
+                            <span class="hidden-xs">
+                                Cart<sup class="text-primary">(3)</sup>
+                                <i class="fa fa-angle-down ml-5"></i>
+                            </span>    
+                        </a>
+                        <ul class="cart w-250">
+                            <li>
+                                <div class="cart-items">
+                                    <ol class="items">
+                                        <li> 
+                                            <a href="shop-single-product-v1.html" class="product-image">
+                                                <img src="<%= image_path('img/products/men_06.jpg') %>" alt="Sample Product ">
+                                            </a>
+                                            <div class="product-details">
+                                                <div class="close-icon"> 
+                                                    <a href="javascript:void(0);"><i class="fa fa-close"></i></a>
+                                                </div>
+                                                <p class="product-name"> 
+                                                    <a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a> 
+                                                </p>
+                                                <strong>1</strong> x <span class="price text-primary">$59.99</span>
+                                            </div><!-- end product-details -->
+                                        </li><!-- end item -->
+                                        <li> 
+                                            <a href="shop-single-product-v1.html" class="product-image">
+                                                <img src="<%= image_path('img/products/shoes_01.jpg') %>" alt="Sample Product ">
+                                            </a>
+                                            <div class="product-details">
+                                                <div class="close-icon"> 
+                                                    <a href="javascript:void(0);"><i class="fa fa-close"></i></a>
+                                                </div>
+                                                <p class="product-name"> 
+                                                    <a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a> 
+                                                </p>
+                                                <strong>1</strong> x <span class="price text-primary">$39.99</span>
+                                            </div><!-- end product-details -->
+                                        </li><!-- end item -->
+                                        <li> 
+                                            <a href="shop-single-product-v1.html" class="product-image">
+                                                <img src="<%= image_path('img/products/bags_07.jpg') %>" alt="Sample Product ">
+                                            </a>
+                                            <div class="product-details">
+                                                <div class="close-icon"> 
+                                                    <a href="javascript:void(0);"><i class="fa fa-close"></i></a>
+                                                </div>
+                                                <p class="product-name"> 
+                                                    <a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a> 
+                                                </p>
+                                                <strong>1</strong> x <span class="price text-primary">$29.99</span>
+                                            </div><!-- end product-details -->
+                                        </li><!-- end item -->
+                                    </ol>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cart-footer">
+                                    <a href="cart.html" class="pull-left"><i class="fa fa-cart-plus mr-5"></i>View Cart</a>
+                                    <a href="checkout.html" class="pull-right"><i class="fa fa-shopping-basket mr-5"></i>Checkout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="linkdown">
+                        <a href="javascript:void(0);">
+                            <i class="fa fa-usd mr-5"></i>
+                            USD
+                            <i class="fa fa-angle-down ml-5"></i>
+                        </a>
+                        <ul class="w-100">
+                            <li><a href="javascript:void(0);"><i class="fa fa-eur mr-5"></i>EUR</a></li>
+                            <li class="active"><a href="javascript:void(0);"><i class="fa fa-usd mr-5"></i>USD</a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-gbp mr-5"></i>GBP</a></li>
+                        </ul>
+                    </li>
+                    <li class="linkdown">
+                        <a href="javascript:void(0);">
+                            <img src="<%= image_path('img/flags/flag-french.jpg') %>" class="mr-5" alt="">
+                            <span class="hidden-xs">
+                                French 
+                                <i class="fa fa-angle-down ml-5"></i>
+                            </span>    
+                        </a>
+                        <ul class="w-100">
+                            <li><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-english.jpg') %>" class="mr-5" alt="">English</a></li>
+                            <li class="active"><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-french.jpg') %>" class="mr-5" alt="">French</a></li>
+                            <li><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-german.jpg') %>" class="mr-5" alt="">German</a></li>
+                            <li><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-spain.jpg') %>" class="mr-5" alt="">Spain</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div><!-- end container -->
+        </div>
+        <!-- end topBar -->
+
+<!-- start section -->
+<section>
     <div class="container">
-        <ul class="list-inline pull-left hidden-sm hidden-xs">
-            <li><i class="fa fa-phone mr-5"></i>+123 4567 8910</li>
-            <li><i class="fa fa-envelope mr-5"></i>sales@yourdomain.com</li>
-        </ul>
         
-        <ul class="topBarNav pull-right">
-            <li class="linkdown">
-                <a href="javascript:void(0);">
-                    <i class="fa fa-usd mr-5"></i>
-                    USD
-                    <i class="fa fa-angle-down ml-5"></i>
-                </a>
-                <ul class="w-100">
-                    <li><a href="javascript:void(0);"><i class="fa fa-eur mr-5"></i>EUR</a></li>
-                    <li class="active"><a href="javascript:void(0);"><i class="fa fa-usd mr-5"></i>USD</a></li>
-                    <li><a href="javascript:void(0);"><i class="fa fa-gbp mr-5"></i>GBP</a></li>
-                </ul>
-            </li>
-            <li class="linkdown">
-                <a href="javascript:void(0);">
-                    <img src="<%= image_path('img/flags/flag-french.jpg') %>" class="mr-5" alt="">
-                    <span class="hidden-xs">
-                        French 
-                        <i class="fa fa-angle-down ml-5"></i>
-                    </span>    
-                </a>
-                <ul class="w-100">
-                    <li><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-english.jpg') %>" class="mr-5" alt="">English</a></li>
-                    <li class="active"><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-french.jpg') %>" class="mr-5" alt="">French</a></li>
-                    <li><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-german.jpg') %>" class="mr-5" alt="">German</a></li>
-                    <li><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-spain.jpg') %>" class="mr-5" alt="">Spain</a></li>
-                </ul>
-            </li>
-            <li class="linkdown">
-                <a href="javascript:void(0);">
-                    <i class="fa fa-user mr-5"></i>
-                    <span class="hidden-xs">
-                        My Account 
-                        <i class="fa fa-angle-down ml-5"></i>
-                    </span>
-                </a>
-                <ul class="w-150">
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Create Account</a></li>
-                    <li class="divider"></li>
-                    <li><a href="wishlist.html">Wishlist (5)</a></li>
-                    <li><a href="cart.html">My Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
-                </ul>
-            </li>
-            <li class="linkdown">
-                <a href="javascript:void(0);">
-                    <i class="fa fa-shopping-basket mr-5"></i>
-                    <span class="hidden-xs">
-                        Cart<sup class="text-primary">(3)</sup>
-                        <i class="fa fa-angle-down ml-5"></i>
-                    </span>    
-                </a>
-                <ul class="cart w-250">
-                    <li>
-                        <div class="cart-items">
-                            <ol class="items">
-                                <li> 
-                                    <a href="shop-single-product-v1.html" class="product-image">
-                                        <img src="<%= image_path('img/products/men_06.jpg') %>" alt="Sample Product ">
-                                    </a>
-                                    <div class="product-details">
-                                        <div class="close-icon"> 
-                                            <a href="javascript:void(0);"><i class="fa fa-close"></i></a>
-                                        </div>
-                                        <p class="product-name"> 
-                                            <a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a> 
-                                        </p>
-                                        <strong>1</strong> x <span class="price text-primary">$59.99</span>
-                                    </div><!-- end product-details -->
-                                </li><!-- end item -->
-                                <li> 
-                                    <a href="shop-single-product-v1.html" class="product-image">
-                                        <img src="<%= image_path('img/products/shoes_01.jpg') %>" alt="Sample Product ">
-                                    </a>
-                                    <div class="product-details">
-                                        <div class="close-icon"> 
-                                            <a href="javascript:void(0);"><i class="fa fa-close"></i></a>
-                                        </div>
-                                        <p class="product-name"> 
-                                            <a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a> 
-                                        </p>
-                                        <strong>1</strong> x <span class="price text-primary">$39.99</span>
-                                    </div><!-- end product-details -->
-                                </li><!-- end item -->
-                                <li> 
-                                    <a href="shop-single-product-v1.html" class="product-image">
-                                        <img src="<%= image_path('img/products/bags_07.jpg') %>" alt="Sample Product ">
-                                    </a>
-                                    <div class="product-details">
-                                        <div class="close-icon"> 
-                                            <a href="javascript:void(0);"><i class="fa fa-close"></i></a>
-                                        </div>
-                                        <p class="product-name"> 
-                                            <a href="shop-single-product-v1.html">Lorem Ipsum dolor sit</a> 
-                                        </p>
-                                        <strong>1</strong> x <span class="price text-primary">$29.99</span>
-                                    </div><!-- end product-details -->
-                                </li><!-- end item -->
-                            </ol>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="cart-footer">
-                            <a href="cart.html" class="pull-left"><i class="fa fa-cart-plus mr-5"></i>View Cart</a>
-                            <a href="checkout.html" class="pull-right"><i class="fa fa-shopping-basket mr-5"></i>Checkout</a>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+        <!-- Modal Login -->
+        <div class="modal fade account loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row display-table text-center">
+                            <div class="col-sm-6 vertical-align">
+                                <div class="inner-content">
+                                    <h3>Login</h3>
+                                    <p class="lead">to your account</p>
+
+                                    <hr class="spacer-5 no-border">
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-lg" placeholder="Your Name">
+                                    </div><!-- end form-group -->
+                                    <div class="form-group">
+                                        <input type="password" class="form-control input-lg" placeholder="Password">
+                                    </div><!-- end form-group -->
+                                    <div class="form-group text-left">
+                                        <div class="checkbox-input mb-10 pull-left">
+                                            <input id="remember" class="styled" type="checkbox">
+                                            <label for="remember">
+                                                Remember me
+                                            </label>
+                                        </div><!-- end checkbox-input -->
+                                        <label class="pull-right"><a href="forgot-password.html">Forgot Password</a></label>
+                                    </div><!-- end form-group -->
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-default btn-block round btn-lg" value="Log In">
+                                    </div><!-- end form-group -->
+
+                                    <div class="or">or</div>
+
+                                </div><!-- inner-content -->
+
+                            </div><!-- end col -->
+
+                            <div class="col-sm-6 vertical-align image-background layer-dark" style="background-image: url(<%= asset_path 'img/bg_01.jpg' %>);">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+
+                                <div class="inner-content">
+                                    <h3 class="text-white">Sign in</h3>
+                                    <p class="lead text-white">with one of your social profiles</p>
+
+                                    <ul class="social-icons style2">
+                                        <li class="facebook"><a class="semi-circle" href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="twitter"><a class="semi-circle" href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="google-plus"><a class="semi-circle" href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+
+                                    <hr class="spacer-10 no-border"/>
+
+                                    <p>Don't have an account? <a href="#" class="text-white">Register</a></p>
+
+                                </div><!-- end inner-content -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                    </div><!-- end modal-body -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end loginModal -->
+        
+        <!-- Modal Register -->
+        <div class="modal fade account registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row display-table text-center">
+                            <div class="col-sm-6 vertical-align">
+                                <div class="inner-content">
+                                    <h3>Register</h3>
+                                    <p class="lead">Create an account</p>
+
+                                    <hr class="spacer-5 no-border">
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-lg" placeholder="Your Name">
+                                    </div><!-- end form-group -->
+                                    <div class="form-group">
+                                        <input type="email" class="form-control input-lg" placeholder="Email">
+                                    </div><!-- end form-group -->
+                                    <div class="form-group">
+                                        <input type="password" class="form-control input-lg" placeholder="Password">
+                                    </div><!-- end form-group -->
+                                    <div class="form-group text-left">
+                                        <div class="checkbox-input mb-10 pull-left">
+                                            <input id="remember" class="styled" type="checkbox">
+                                            <label for="remember">
+                                                Remember me
+                                            </label>
+                                        </div><!-- end checkbox-input -->
+                                    </div><!-- end form-group -->
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-default btn-block round btn-lg" value="Log In">
+                                    </div><!-- end form-group -->
+
+                                    <div class="or hidden-xs">or</div>
+
+                                </div><!-- inner-content -->
+
+                            </div><!-- end col -->
+
+                            <div class="col-sm-6 vertical-align image-background layer-dark" style="background-image: url(<%= asset_path 'img/bg_01.jpg' %>);">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+
+                                <div class="inner-content">
+                                    <h3 class="text-white">Sign Up</h3>
+                                    <p class="lead text-white">with one of your social profiles</p>
+
+                                    <ul class="social-icons style2">
+                                        <li class="facebook"><a class="semi-circle" href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="twitter"><a class="semi-circle" href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="google-plus"><a class="semi-circle" href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+
+                                    <hr class="spacer-10 no-border"/>
+
+                                    <p>Do you have an account? <a href="#" class="text-white">Log In</a></p>
+
+                                </div><!-- end inner-content -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                    </div><!-- end modal-body -->
+                </div><!-- end modal-content -->
+            </div><!-- end modal-dialog -->
+        </div><!-- end registerModal -->
     </div><!-- end container -->
-</div>
-<!-- end topBar -->
+</section>
+<!-- end section -->

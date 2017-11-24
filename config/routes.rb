@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
 
-	get 'static_pages/home'
+	get '/home',  	to: 'static_pages#home'
 
-  get 'static_pages/home1'
+  get '/home1',	  to: 'static_pages#home1'
 
-  get 'static_pages/home2'
+  get '/home2',	  to: 'static_pages#home2'
 
-  get 'static_pages/contact'
+  get '/contact', to: 'static_pages#contact'
 
-  get 'static_pages/about'
+  get '/about',   to: 'static_pages#about'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   
