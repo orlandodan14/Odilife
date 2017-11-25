@@ -2,6 +2,36 @@
         <!-- start topBar -->
         <div class="topBar">
             <div class="container">
+            
+                <ul class="topBarNav pull-left">
+                    <li class="linkdown">
+                        <a href="javascript:void(0);">
+                            <i class="fa fa-usd mr-5"></i>
+                            USD
+                            <i class="fa fa-angle-down ml-5"></i>
+                        </a>
+                        <ul class="w-100">
+                            <li><a href="javascript:void(0);"><i class="fa fa-eur mr-5"></i>EUR</a></li>
+                            <li class="active"><a href="javascript:void(0);"><i class="fa fa-usd mr-5"></i>USD</a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-gbp mr-5"></i>GBP</a></li>
+                        </ul>
+                    </li>
+                    <li class="linkdown">
+                        <a href="javascript:void(0);">
+                            <img src="<%= image_path('img/flags/flag-french.jpg') %>" class="mr-5" alt="">
+                            <span class="hidden-xs">
+                                French 
+                                <i class="fa fa-angle-down ml-5"></i>
+                            </span>    
+                        </a>
+                        <ul class="w-100">
+                            <li><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-english.jpg') %>" class="mr-5" alt="">English</a></li>
+                            <li class="active"><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-french.jpg') %>" class="mr-5" alt="">French</a></li>
+                            <li><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-german.jpg') %>" class="mr-5" alt="">German</a></li>
+                            <li><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-spain.jpg') %>" class="mr-5" alt="">Spain</a></li>
+                        </ul>
+                    </li>
+                </ul>
                 
                 <ul class="topBarNav pull-right">
                     <li><a href="javascript:void(0);" data-toggle="modal" data-target=".loginModal"> Login</a></li>
@@ -86,33 +116,6 @@
                         </ul>
                     </li>
 
-                    <li class="linkdown">
-                        <a href="javascript:void(0);">
-                            <i class="fa fa-usd mr-5"></i>
-                            USD
-                            <i class="fa fa-angle-down ml-5"></i>
-                        </a>
-                        <ul class="w-100">
-                            <li><a href="javascript:void(0);"><i class="fa fa-eur mr-5"></i>EUR</a></li>
-                            <li class="active"><a href="javascript:void(0);"><i class="fa fa-usd mr-5"></i>USD</a></li>
-                            <li><a href="javascript:void(0);"><i class="fa fa-gbp mr-5"></i>GBP</a></li>
-                        </ul>
-                    </li>
-                    <li class="linkdown">
-                        <a href="javascript:void(0);">
-                            <img src="<%= image_path('img/flags/flag-french.jpg') %>" class="mr-5" alt="">
-                            <span class="hidden-xs">
-                                French 
-                                <i class="fa fa-angle-down ml-5"></i>
-                            </span>    
-                        </a>
-                        <ul class="w-100">
-                            <li><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-english.jpg') %>" class="mr-5" alt="">English</a></li>
-                            <li class="active"><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-french.jpg') %>" class="mr-5" alt="">French</a></li>
-                            <li><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-german.jpg') %>" class="mr-5" alt="">German</a></li>
-                            <li><a href="javascript:void(0);"><img src="<%= image_path('img/flags/flag-spain.jpg') %>" class="mr-5" alt="">Spain</a></li>
-                        </ul>
-                    </li>
                 </ul>
 
             </div><!-- end container -->
